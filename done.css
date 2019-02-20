@@ -1,15 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&subset=korean');
+
 .title{
     font-size: 50pt;
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: 5pt;
+    text-align: center;
 }
+
 #winnerImg{
-    width : 500px;
-    height: 600px;
+    max-width: 1500px;
+    width : 1000px;
+    height: 800px;  
 }
+
+#win{
+    display: block;
+    margin: 100px auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 1000px;
+    width: 1000px;
+    height: auto;
+    /* border-style: solid;
+    border-width: 10pt; */  
+}
+
 table{
     width : 600px;
     border-top: 1px solid #444444;
     border-collapse: collapse;
 }
+
 th, td {
     border-bottom: 1px solid #444444;
     padding: 10px;
