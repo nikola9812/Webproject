@@ -9,16 +9,16 @@ app.listen(3000, function () {
 	console.log('Example app listening on port 3000!');
 });
 
-app.use(express.static('/Users/hanjinsu/Work/web-test/'));
+app.use(express.static('../'));
 
 app.get('/changeJson', function (req, res) {
 	var winnerId = req.query.winnerID;
 	var subject = req.query.subject;
 	const fs = require('fs');
-	const rtPath = '/Users/hanjinsu/Work/web-test/data/';
+	const rtPath = '../data/';
 	var json = fs.readFileSync(rtPath + subject + '.json', 'utf-8');
 	Json = JSON.parse(json);
-	console.log(Json);
+	//console.log(Json);
 	res.send('recieve data');
 	for (var i = 0; i < 8; i++) {
 		if (Json[i].src == winnerId) {
